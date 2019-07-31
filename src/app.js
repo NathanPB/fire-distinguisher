@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.use(rateLimit({
   windowMs: 10000,
-  max: 2,
+  max: 5,
   message: "Heyy! Hold up! I can't process so many fucking requests. Please go away and come back later, ehh"
 }));
 
